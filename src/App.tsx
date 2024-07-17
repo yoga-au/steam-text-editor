@@ -1,8 +1,10 @@
+import Tiptap from "./components/Tiptap";
+
 function App() {
   return (
-    <>
-      <h1>Init Project</h1>
-    </>
+    <div>
+      <Tiptap />
+    </div>
   );
 }
 
