@@ -1,9 +1,9 @@
-import Tiptap from "./components/Tiptap";
+import Editor from "./lib/editor/Editor";
 
 function App() {
   return (
     <div>
-      <Tiptap />
+      <Editor />
     </div>
   );
 }
