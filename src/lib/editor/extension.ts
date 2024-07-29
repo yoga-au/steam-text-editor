@@ -10,8 +10,10 @@ import type { Extensions } from "@tiptap/react";
 
 export const extensions: Extensions | undefined = [
   StarterKit,
+  Highlight.configure({
+    multicolor: true,
+  }),
   Underline,
-  Highlight,
   Link,
   Table,
   TableCell,

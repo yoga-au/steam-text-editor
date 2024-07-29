@@ -4,17 +4,25 @@
 
 /* Temp */
 .tiptap {
-  padding: 0.5em;
+  @apply p-2;
 }
 
 .tiptap h1 {
-  font-size: 28px;
+  @apply text-3xl;
 }
 
 .tiptap h2 {
-  font-size: 24px;
+  @apply text-2xl;
 }
 
 .tiptap h3 {
-  font-size: 20px;
+  @apply text-xl;
+}
+
+.tiptap ul {
+  @apply list-disc list-outside pl-6;
+}
+
+.tiptap ol {
+  @apply list-decimal list-outside pl-6;
 }
