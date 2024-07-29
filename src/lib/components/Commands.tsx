@@ -37,18 +37,30 @@ const Commands = ({ editor }: CommandsProps) => {
     },
     {
       content: <span>B</span>,
+      command: () => {
+        editor.chain().focus().toggleBold().run();
+      },
     },
     {
       content: <span>U</span>,
+      command: () => {
+        editor.chain().focus().toggleUnderline().run();
+      },
     },
     {
       content: <span>S</span>,
+      command: () => {
+        editor.chain().focus().toggleStrike().run();
+      },
     },
     {
       content: <span>Sp</span>,
     },
     {
       content: <span>Hr</span>,
+      command: () => {
+        editor.chain().focus().setHorizontalRule().run();
+      },
     },
     {
       content: <span>URL</span>,
