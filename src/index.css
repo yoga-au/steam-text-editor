@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tiptap h1 {
+  font-size: 28px;
+}
+
+.tiptap h2 {
+  font-size: 24px;
+}
+
+.tiptap h3 {
+  font-size: 20px;
+}

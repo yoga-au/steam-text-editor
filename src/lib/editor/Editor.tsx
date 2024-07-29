@@ -1,25 +1,6 @@
 import { useEditor, EditorContent } from "@tiptap/react";
-import StarterKit from "@tiptap/starter-kit";
-import Underline from "@tiptap/extension-underline";
-import Highlight from "@tiptap/extension-highlight";
-import Link from "@tiptap/extension-link";
-import Table from "@tiptap/extension-table";
-import TableCell from "@tiptap/extension-table-cell";
-import TableHeader from "@tiptap/extension-table-header";
-import TableRow from "@tiptap/extension-table-row";
-import CommandButton from "@lib/ui/CommandButton";
-import { commandLayout } from "@lib/editor/layout";
-
-const extensions = [
-  StarterKit,
-  Underline,
-  Highlight,
-  Link,
-  Table,
-  TableCell,
-  TableHeader,
-  TableRow,
-];
+import Commands from "@lib/components/Commands";
+import { extensions } from "./extension";
 
 const Editor = () => {
   const editor = useEditor({
@@ -33,16 +14,7 @@ const Editor = () => {
 
   return (
     <>
-      <div>
-        {commandLayout.map((item, index) => {
-          return (
-            <CommandButton key={index} className="mx-2">
-              {item.content}
-            </CommandButton>
-          );
-        })}
-      </div>
-
+      <Commands editor={editor} />
       <EditorContent editor={editor} />
     </>
   );
