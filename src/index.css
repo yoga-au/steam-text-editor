@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Temp */
+.tiptap {
+  padding: 0.5em;
+}
+
 .tiptap h1 {
   font-size: 28px;
 }
